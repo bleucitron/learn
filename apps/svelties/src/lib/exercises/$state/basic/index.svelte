@@ -4,6 +4,7 @@
 	const pokemon = getPokemon(25);
 
 	const maxHealth = 100;
+	// TODO: convert this to $state and an event listener to the button to update it
 	const health = maxHealth;
 </script>
 
