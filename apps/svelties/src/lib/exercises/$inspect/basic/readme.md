@@ -1,0 +1,1 @@
+- utilisez `$inspect` pour afficher dans la console les données de chaque nouveau Pokémon

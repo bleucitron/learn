@@ -8,7 +8,9 @@
 - [x] $derived – basic
 - [ ] $effect – basic
 - [ ] $derived vs $effect
-- [ ] $inspect – basic
+- [x] $inspect – basic
+
+- [ ] Projet
 
 ## Contexte
 
