@@ -16,9 +16,8 @@ body {
 }
 
 body {
-	display: flex;
-	flex-flow: column;
-	place-content: center;
+	/* display: flex; */
+	/* flex-flow: column; */
 	color: #333;
 	background: #bbb;
 	margin: 0;
