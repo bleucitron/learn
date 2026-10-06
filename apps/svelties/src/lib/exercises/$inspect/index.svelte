@@ -10,7 +10,7 @@
 	const teamSize = $derived(ids.length);
 	const full = $derived(teamSize === MAX);
 
-	// TODO: use $inspect to log each captured Pokemon data
+	$inspect(pokemons.at(-1));
 
 	function findPokemon() {
 		const id = getRandomNumber(151);
