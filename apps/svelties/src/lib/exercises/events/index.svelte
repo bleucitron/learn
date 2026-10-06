@@ -12,5 +12,4 @@
 <img src={pokemon.sprites.front_default} alt={pokemon.name} />
 <p>{pokemon.name}</p>
 
-<!-- TODO: add an event listener to this button to use `showID`  -->
-<button>Show ID</button>
+<button onclick={showID}>Show ID</button>
