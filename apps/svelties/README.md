@@ -3,7 +3,7 @@
 ## Syntaxe Svelte 5
 
 - [x] events – basic
-- [ ] classes – basic
+- [x] classes – basic
 - [x] $state – basic
 - [x] $derived – basic
 - [ ] $effect – basic

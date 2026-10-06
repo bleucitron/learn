@@ -1,0 +1,1 @@
+- Ajoutez une classe pour que les Pokemons encore inconnus soient affichés masqués

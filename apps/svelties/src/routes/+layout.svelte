@@ -17,5 +17,6 @@
 		display: flex;
 		flex-flow: column;
 		align-items: center;
+		height: 100%;
 	}
 </style>
