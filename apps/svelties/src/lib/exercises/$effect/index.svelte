@@ -9,7 +9,11 @@
 
 	const dead = $derived(health <= 0);
 
-	// TODO: add an $effect to trigger an alert when your Pokemon dies
+	$effect(() => {
+		if (dead) {
+			alert('Your Pokemon has died...');
+		}
+	});
 
 	function attack() {
 		const damage = getRandomNumber(10, 30);
