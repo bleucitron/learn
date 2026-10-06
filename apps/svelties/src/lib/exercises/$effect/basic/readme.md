@@ -1,0 +1,1 @@
+- utiliser `$effect` pour déclencher une `alert` lorsque votre Pokémon décède

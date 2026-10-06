@@ -6,7 +6,7 @@
 - [x] classes – basic
 - [x] $state – basic
 - [x] $derived – basic
-- [ ] $effect – basic
+- [x] $effect – basic
 - [ ] $derived vs $effect
 - [x] $inspect – basic
 
