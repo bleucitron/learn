@@ -5,6 +5,8 @@
 - [x] events – basic
 - [x] classes – basic
 - [x] $state – basic
+- [ ] $state - deep reactivity
+- [ ] $state - fine-grained reactivity
 - [x] $derived – basic
 - [x] $effect – basic
 - [ ] $derived vs $effect
@@ -19,3 +21,8 @@
 ## Attachments
 
 ## $state avancé
+
+- [x] $state - factories
+- [ ] $state - classes
+- [ ] $state - shared state
+- [ ] $state - shared factories
