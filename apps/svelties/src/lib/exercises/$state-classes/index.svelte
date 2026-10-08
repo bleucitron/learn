@@ -2,50 +2,45 @@
 	import { getPokemon } from '#lib/pokemons/index.js';
 	import { getRandomNumber } from '#lib/utils/getRandomNumber.js';
 
-	const MAX = 6;
+	class Team {
+		private MAX = 6;
 
-	let ids = $state<number[]>([25]);
+		private ids = $state<number[]>([]);
 
-	const pokemons = $derived(ids.map(getPokemon));
-	const teamSize = $derived(ids.length);
-	const full = $derived(teamSize === MAX);
+		constructor(starterId: number) {
+			this.ids = [starterId];
+		}
 
-	function add() {
-		const id = getRandomNumber(151);
+		pokemons = $derived(this.ids.map(getPokemon));
+		isFull = $derived(this.ids.length === this.MAX);
 
-		ids.push(id);
+		add = () => {
+			const id = getRandomNumber(151);
+
+			this.ids.push(id);
+		};
 	}
 
-	// TODO: factorize the $state creation and management logic
-	let ids_2 = $state<number[]>([4]);
-
-	const pokemons_2 = $derived(ids_2.map(getPokemon));
-	const teamSize_2 = $derived(ids_2.length);
-	const full_2 = $derived(teamSize_2 === MAX);
-
-	function add_2() {
-		const id = getRandomNumber(151);
-
-		ids_2.push(id);
-	}
+	const mine = new Team(25);
+	const yours = new Team(4);
 </script>
 
 <div class="pokemons yours">
 	<!-- eslint-disable-next-line svelte/require-each-key -->
-	{#each pokemons as { name, sprites }}
+	{#each yours.pokemons as { name, sprites }}
 		<img src={sprites.front_default} alt={name} />
 	{/each}
 
-	<button onclick={add} disabled={full}>Add</button>
+	<button onclick={yours.add} disabled={yours.isFull}>Add</button>
 </div>
 
 <div class="pokemons mine">
 	<!-- eslint-disable-next-line svelte/require-each-key -->
-	{#each pokemons_2 as { name, sprites }}
+	{#each mine.pokemons as { name, sprites }}
 		<img src={sprites.back_default} alt={name} />
 	{/each}
 
-	<button onclick={add_2} disabled={full_2}>Add</button>
+	<button onclick={mine.add} disabled={mine.isFull}>Add</button>
 </div>
 
 <style>
