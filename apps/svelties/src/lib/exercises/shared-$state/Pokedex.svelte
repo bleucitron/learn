@@ -1,23 +1,8 @@
 <script lang="ts">
 	import { getAllPokemons } from '#lib/pokemons/index.js';
+	import { pokedex } from './shared.svelte';
 
 	const pokemons = getAllPokemons();
-
-	class Pokedex {
-		found = $state<number[]>([]);
-
-		find = (id: number) => {
-			if (!this.found.includes(id)) {
-				this.found.push(id);
-			}
-		};
-
-		has = (id: number) => {
-			return this.found.includes(id);
-		};
-	}
-
-	const pokedex = new Pokedex();
 </script>
 
 <div class="pokedex">
