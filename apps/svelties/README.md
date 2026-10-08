@@ -23,6 +23,6 @@
 ## $state avancé
 
 - [x] $state - factories
-- [ ] $state - classes
+- [x] $state - classes
 - [ ] $state - shared state
 - [ ] $state - shared factories

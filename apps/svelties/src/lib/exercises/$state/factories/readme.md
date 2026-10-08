@@ -1,3 +1,5 @@
+> NOTE: cet exercice est le mème que $state/classes, mais avec une approche différente
+
 Beaucoup de code est dupliqué pour permettre de gérer les deux équipes indépendemment. L'objectif
 est de factoriser la création d'une équipe de Pokémons.
 
