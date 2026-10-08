@@ -12,7 +12,7 @@
 - [ ] $derived vs $effect
 - [x] $inspect – basic
 
-- [ ] Projet
+- [ ] Projet :
 
 ## Contexte
 
@@ -24,5 +24,8 @@
 
 - [x] $state - factories
 - [x] $state - classes
-- [ ] $state - shared state
-- [ ] $state - shared factories
+- [ ] $state - bad sharing
+- [x] $state - shared
+
+- [ ] Projet : Création d'une classe permettant de créer un Pokémon combattant, et en faire
+      combattre 2

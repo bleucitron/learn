@@ -1,5 +1,5 @@
 <script lang="ts">
-	import Exo from '$lib/exercises/$state/classes/solved.svelte';
+	import Exo from '$lib/exercises/$state/shared/index.svelte';
 </script>
 
 <Exo />
