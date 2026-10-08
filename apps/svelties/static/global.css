@@ -105,6 +105,12 @@ button {
 button:disabled {
 	color: #999;
 }
+button:disabled:focus,
+button:disabled:hover {
+	cursor: default;
+	color: #999;
+	background-color: transparent;
+}
 
 button:not(:disabled):active {
 	background-color: #999;
