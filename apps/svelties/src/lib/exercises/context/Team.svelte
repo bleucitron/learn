@@ -3,16 +3,15 @@
 
 	type Props = {
 		ids: number[];
-		isPlayer: boolean;
 	};
 
-	const { ids, isPlayer }: Props = $props();
+	const { ids }: Props = $props();
 </script>
 
 <div class="team">
 	<!-- eslint-disable-next-line svelte/require-each-key -->
 	{#each ids as id}
-		<Pokemon {id} {isPlayer} />
+		<Pokemon {id} />
 	{/each}
 </div>
 
