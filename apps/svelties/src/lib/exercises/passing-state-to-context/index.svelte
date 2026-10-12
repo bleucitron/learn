@@ -5,8 +5,7 @@
 	const INITIAL_LANG = 'en';
 
 	let lang = $state<Lang>(INITIAL_LANG);
-	// TODO: fix how state is passed to context to allow reactive context
-	setLangContext(lang);
+	setLangContext(() => lang);
 </script>
 
 <Lab />

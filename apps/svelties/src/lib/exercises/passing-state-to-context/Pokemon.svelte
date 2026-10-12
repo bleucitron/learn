@@ -2,7 +2,7 @@
 	import { getPokemon, translations } from '#lib/pokemons/index.js';
 	import { getLangContext } from './context';
 
-	const lang = getLangContext();
+	const getLang = getLangContext();
 
 	type Props = {
 		id: number;
@@ -13,6 +13,7 @@
 	const { name, sprites } = $derived(getPokemon(id));
 	const src = $derived(sprites.front_default);
 
+	const lang = $derived(getLang());
 	const translated = $derived(translations[lang]?.[name] ?? name);
 </script>
 
