@@ -36,3 +36,11 @@ export function fetchTotalPopulation() {
 
 	return new Promise<number>((resolve) => setTimeout(() => resolve(population), duration));
 }
+
+export const translations: Partial<Record<'fr' | 'en', Record<string, string>>> = {
+	fr: {
+		bulbasaur: 'bulbizarre',
+		charmander: 'salamèche',
+		squirtle: 'carapuce'
+	}
+};
