@@ -1,5 +1,6 @@
 <script lang="ts">
 	import Bench from './Bench.svelte';
+	import { setPlayerContext } from './context';
 	import Team from './Team.svelte';
 
 	type Props = {
@@ -11,7 +12,7 @@
 
 	const { team, isPlayer = false }: Props = $props();
 
-	// TODO: use context to avoid prop drilling the `isPlayer` data
+	setPlayerContext(isPlayer);
 
 	const onField = $derived(team.slice(0, ON_FIELD - 1));
 	const bench = $derived(team.slice(ON_FIELD - 1));
@@ -19,10 +20,10 @@
 
 <div class="Trainer">
 	<section class="field">
-		<Team ids={onField} {isPlayer} />
+		<Team ids={onField} />
 	</section>
 	<section class="info">
-		<Bench ids={bench} {isPlayer} />
+		<Bench ids={bench} />
 	</section>
 </div>
 
