@@ -4,13 +4,14 @@
 
 	const starters = [1, 4, 7];
 
-	const lang = getLangContext();
+	const getLang = getLangContext();
 
 	const textByLang = {
 		fr: 'Choisissez votre Pokémon',
 		en: 'Choose your Pokemon'
 	};
 
+	const lang = $derived(getLang());
 	const text = $derived(textByLang[lang]);
 </script>
 
