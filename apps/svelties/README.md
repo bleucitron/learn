@@ -21,6 +21,15 @@
 
 ## Snippets
 
+- [ ] migration depuis slots
+- [x] composant "local"
+- [ ] export
+- [x] snipprops
+- [ ] `children`
+- [ ] scope
+
+- [ ] Projet : Slideshow
+
 ## Attachments
 
 ## $state avancé
