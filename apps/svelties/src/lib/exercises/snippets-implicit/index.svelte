@@ -2,23 +2,22 @@
 	import Pokemon from './Pokemon.svelte';
 </script>
 
-<!-- TODO: refactor the snippets as implicit props -->
-{#snippet health(current: number, max: number)}
-	<p>{current}/{max}</p>
-{/snippet}
-
-{#snippet healthBar(current: number, max: number)}
-	<div class="health-bar">
-		<!-- eslint-disable-next-line svelte/require-each-key -->
-		{#each Array.from({ length: max }), i}
-			<div class={['hp', { full: i < current }]}></div>
-		{/each}
-	</div>
-{/snippet}
-
 <div>
-	<Pokemon id={27} {health}></Pokemon>
-	<Pokemon id={7} health={healthBar}></Pokemon>
+	<Pokemon id={27}>
+		{#snippet health(current: number, max: number)}
+			<p>{current}/{max}</p>
+		{/snippet}
+	</Pokemon>
+	<Pokemon id={7}>
+		{#snippet health(current: number, max: number)}
+			<div class="health-bar">
+				<!-- eslint-disable-next-line svelte/require-each-key -->
+				{#each Array.from({ length: max }), i}
+					<div class={['hp', { full: i < current }]}></div>
+				{/each}
+			</div>
+		{/snippet}
+	</Pokemon>
 </div>
 
 <style lang="scss">
