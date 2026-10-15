@@ -2,11 +2,10 @@
 	import { getPokemon } from '#lib/pokemons/index.js';
 	import Card from './Card.svelte';
 
-	const { name, id, types: _types } = getPokemon(25);
+	const { name, id, sprites, types: _types } = getPokemon(25);
 	const types = _types.map((t) => t.type.name);
 </script>
 
-<!-- TODO: provide the Card with a default snippet of your choice -->
 <div>
 	<Card>
 		{#snippet header()}
@@ -15,6 +14,8 @@
 				<p>{name}</p>
 			</div>
 		{/snippet}
+
+		<img src={sprites.front_default} alt={name} />
 
 		{#snippet footer()}
 			<ul class="types">
