@@ -24,7 +24,8 @@
 - [ ] migration depuis slots
 - [x] composant "local"
 - [ ] export
-- [x] snipprops
+- [x] explicit
+- [x] implicit
 - [ ] `children`
 - [ ] scope
 
