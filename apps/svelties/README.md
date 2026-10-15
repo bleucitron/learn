@@ -23,15 +23,19 @@
 
 - [ ] migration depuis slots
 - [x] composant "local"
-- [ ] export
+- [x] export
 - [x] explicit
 - [x] implicit
-- [ ] `children`
+- [x] `children`
+- [ ] type inference
 - [ ] scope
 
 - [ ] Projet : Slideshow
 
 ## Attachments
+
+- [ ] basics
+- [ ] factories
 
 ## $state avancé
 
