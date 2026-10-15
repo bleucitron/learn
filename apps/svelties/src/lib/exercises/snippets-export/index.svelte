@@ -1,6 +1,6 @@
 <script lang="ts">
 	import { getPokemon } from '#lib/pokemons/index.js';
-	import Card from './Card.svelte';
+	import Card, { img } from './Card.svelte';
 
 	const ids = $state<number[]>([25, 44, 75, 2, 150]);
 	const pokemons = $derived(ids.map(getPokemon));
@@ -12,14 +12,12 @@
 	}
 </script>
 
-<!-- TODO: create an snippet export in Card to reuse the <img> -->
-
 <Card id={current} />
 
 <div class="pokemons mine">
 	{#each pokemons as { id, name, sprites } (id)}
 		<button onclick={() => view(id)}>
-			<img src={sprites.front_default} alt={name} />
+			{@render img(sprites.front_default, name)}
 		</button>
 	{/each}
 </div>
