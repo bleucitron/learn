@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getAllPokemons, getPokemonTypes } from '#lib/pokemons/index.js';
+	import { outsideClick } from './outsideClick';
 
 	type Props = { found: number[] };
 
@@ -30,8 +31,7 @@
 
 <section>
 	<input placeholder="Search" bind:value={query} />
-	<!-- TODO: create an attachment factory to be able to react to a click outside this menu -->
-	<menu>
+	<menu {@attach outsideClick(() => (menuOpen = false))}>
 		<button onclick={toggleMenu}>Filters</button>
 
 		{#if menuOpen}
