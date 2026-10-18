@@ -20,8 +20,21 @@
 </script>
 
 <div>
-	<!-- TODO: create an attachment to be able to react to a click outside this menu -->
-	<menu>
+	<menu
+		{@attach (element) => {
+			function executeIfOutside(event: MouseEvent) {
+				if (!event.target) return;
+
+				if (!element.contains(event.target as HTMLElement)) {
+					navOpen = false;
+				}
+			}
+
+			document.body.addEventListener('click', executeIfOutside, true);
+
+			return () => document.body.removeEventListener('click', executeIfOutside, true);
+		}}
+	>
 		<button onclick={toggleNav}>Menu</button>
 
 		{#if navOpen}
