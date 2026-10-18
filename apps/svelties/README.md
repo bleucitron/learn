@@ -34,8 +34,12 @@
 
 ## Attachments
 
-- [ ] basics
-- [ ] factories
+- [x] basics
+- [x] factories
+- [ ] spreading
+
+- [ ] Projet : afficher les détails d'un Pokémon lorsqu'il arrive au milieu de l'écran
+      (IntersectionObserver)
 
 ## $state avancé
 

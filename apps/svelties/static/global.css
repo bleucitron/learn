@@ -59,6 +59,10 @@ ul {
 	list-style: none;
 }
 
+menu {
+	padding: 0;
+}
+
 label {
 	display: block;
 }
