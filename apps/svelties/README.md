@@ -36,7 +36,7 @@
 
 - [x] basics
 - [x] factories
-- [ ] spreading
+- [x] spreading
 
 - [ ] Projet : afficher les détails d'un Pokémon lorsqu'il arrive au milieu de l'écran
       (IntersectionObserver)
@@ -51,3 +51,11 @@
 
 - [ ] Projet : Création d'une classe permettant de créer un Pokémon combattant, et en faire
       combattre 2
+
+## bindings
+
+- [ ] component bindings
+
+## special elements
+
+- [ ] boundaries
