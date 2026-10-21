@@ -2,6 +2,8 @@
 	import { getPokemon } from '#lib/pokemons/index.js';
 	import Button from './Button.svelte';
 
+	const wiki = 'https://en.wikipedia.org/wiki';
+
 	type Props = {
 		id: number;
 	};
@@ -14,8 +16,7 @@
 <div class="Card">
 	<div class="id">
 		<p>#{id}</p>
-		<!-- TODO: use a <Button> with an href to https://en.wikipedia.org/wiki/{id} -->
-		<Button href="https://en.wikipedia.org/wiki/{name}" label={name} />
+		<Button label={name} href="{wiki}/{name}" />
 	</div>
 
 	<img src={sprites.front_default} alt={name} />
