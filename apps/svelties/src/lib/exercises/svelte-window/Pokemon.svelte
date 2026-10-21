@@ -20,7 +20,7 @@
 	const top = $derived(getRandomNumber(0, innerHeight - MARGIN));
 </script>
 
-<!-- TODO: use <svelte:window> to get innerHeight and innerWidth -->
+<svelte:window bind:innerHeight bind:innerWidth />
 
 {#if innerHeight && innerWidth}
 	<div class="Pokemon" style:left="{left}px" style:top="{top}px">
