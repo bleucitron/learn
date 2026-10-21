@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { outsideClick } from './outsideClick';
 	import Pokemon from './Pokemon.svelte';
 
 	const ids = [4, 16, 61, 74, 8, 123, 45, 99];
@@ -14,8 +15,11 @@
 </script>
 
 <div>
-	{#each ids as id (id)}
-		<!-- TODO: provide with the outsideClick attachment that would execute `toggle` with the `id` -->
-		<Pokemon {id} hidden={hidden.includes(id)}></Pokemon>
+	{#each ids as id, position (id)}
+		<Pokemon
+			{id}
+			hidden={hidden.includes(id)}
+			{@attach position % 2 === 0 ? outsideClick(() => toggle(id)) : null}
+		></Pokemon>
 	{/each}
 </div>
