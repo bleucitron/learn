@@ -1,5 +1,9 @@
 # Plan
 
+## Syntaxe
+
+- [ ] {#key}
+
 ## Syntaxe Svelte 5
 
 - [x] events – basic
@@ -9,8 +13,12 @@
 - [ ] $state - fine-grained reactivity
 - [x] $derived – basic
 - [x] $effect – basic
+- [ ] $effect – untrack
+- [ ] $derived – untrack
 - [ ] $derived vs $effect
 - [x] $inspect – basic
+- [ ] const
+- [ ] let
 
 - [ ] Projet : Filtrer le Pokédex par nom et par type
 
@@ -41,6 +49,11 @@
 - [ ] Projet : afficher les détails d'un Pokémon lorsqu'il arrive au milieu de l'écran
       (IntersectionObserver)
 
+## Réactivité
+
+- [ ] SvelteDate
+- [ ] SvelteSet
+
 ## $state avancé
 
 - [x] $state – factories
@@ -58,4 +71,6 @@
 
 ## special elements
 
+- [x] window
 - [ ] boundaries
+- [ ] element

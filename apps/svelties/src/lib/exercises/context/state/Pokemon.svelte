@@ -13,12 +13,12 @@
 	const { name, sprites } = $derived(getPokemon(id));
 	const src = $derived(sprites.front_default);
 
-	const transated = $derived(translations[lang]?.[name] ?? name);
+	const translated = $derived(translations[lang]?.[name] ?? name);
 </script>
 
 <div class="Pokemon">
-	<img {src} alt={transated} />
-	<p>{transated}</p>
+	<img {src} alt={translated} />
+	<p>{translated}</p>
 </div>
 
 <style>
