@@ -6,7 +6,7 @@
 		hidden?: boolean;
 	};
 
-	let { id, hidden = false }: Props = $props();
+	let { id, hidden = false, ...props }: Props = $props();
 
 	const { name, sprites } = $derived(getPokemon(id));
 	const side = $derived(hidden ? 'back' : 'front');
@@ -14,7 +14,6 @@
 	const src = $derived(sprites[`${side}_default`]);
 </script>
 
-<!-- TODO: apply the provided attachment -->
-<button>
+<button {...props}>
 	<img {src} alt={name} />
 </button>
