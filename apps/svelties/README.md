@@ -1,6 +1,6 @@
 # Plan
 
-## Syntaxe
+## Tags
 
 - [ ] {#key}
 
@@ -17,9 +17,9 @@
 - [ ] $derived – untrack
 - [ ] $derived vs $effect
 - [x] $inspect – basic
-- [x] const
-- [x] let
-- [x] const + $derived
+- [x] {const}
+- [x] {let}
+- [x] {const} + $derived
 
 - [ ] Projet : Filtrer le Pokédex par nom et par type
 
