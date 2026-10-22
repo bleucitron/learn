@@ -8,7 +8,7 @@
 	<ul>
 		{#each team as id (id)}
 			{let exp = $state(0)}
-			<!-- TODO: add the level (exp/10, truncated) with a `$derived` -->
+			{const level = $derived(Math.floor(exp / 10))}
 			<li>
 				<button
 					onclick={() => {
@@ -17,6 +17,7 @@
 				>
 					<img src={getPokemon(id).sprites.front_default} alt={getPokemon(id).name} />
 					<p>{getPokemon(id).name}</p>
+					<p>Lvl {level}</p>
 					<p>{exp} xp</p>
 				</button>
 			</li>
