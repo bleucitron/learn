@@ -11,8 +11,9 @@
 	}
 </script>
 
-<!-- TODO: use {#key} to trigger the transition on each id change -->
-<img src={sprites.front_default} alt={name} in:blur />
+{#key id}
+	<img src={sprites.front_default} alt={name} in:blur />
+{/key}
 <button onclick={shuffle}> Shuffle </button>
 
 <style lang="scss">
