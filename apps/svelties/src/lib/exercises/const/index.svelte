@@ -8,10 +8,12 @@
 	<p>Choose your first Pokemon</p>
 	<ul>
 		{#each starters as id (id)}
-			<!-- TODO: use {const ...} to avoid repeating yourself  -->
+			{const { sprites, name } = getPokemon(id)}
 			<li>
-				<img src={getPokemon(id).sprites.front_default} alt={getPokemon(id).name} />
-				<p>{getPokemon(id).name}</p>
+				<button>
+					<img src={sprites.front_default} alt={name} />
+					<p>{name}</p>
+				</button>
 			</li>
 		{/each}
 	</ul>
