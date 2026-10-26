@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
+	import { getPokemon } from '#lib/pokemons/index.js';
 
 	const team = [15, 45, 75, 12, 105];
 </script>

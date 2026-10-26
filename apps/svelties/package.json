@@ -15,8 +15,8 @@
 	},
 	"devDependencies": {
 		"@eslint/js": "catalog:",
-		"@sveltejs/adapter-auto": "catalog:",
-		"@sveltejs/kit": "catalog:",
+		"@sveltejs/adapter-auto": "^8.0.0",
+		"@sveltejs/kit": "^3.0.0",
 		"@sveltejs/vite-plugin-svelte": "catalog:",
 		"@types/node": "catalog:",
 		"eslint": "catalog:",
@@ -30,5 +30,9 @@
 		"typescript": "catalog:",
 		"typescript-eslint": "catalog:",
 		"vite": "catalog:"
+	},
+	"imports": {
+		"#lib": "./src/lib/index.js",
+		"#lib/*": "./src/lib/*"
 	}
 }

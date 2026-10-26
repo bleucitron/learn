@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getAllPokemons } from '$lib/pokemons';
+	import { getAllPokemons } from '#lib/pokemons/index.js';
 
 	type Props = { found: number[] };
 

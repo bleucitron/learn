@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon, translations } from '$lib/pokemons';
+	import { getPokemon, translations } from '#lib/pokemons/index.js';
 	import { getLangContext } from './context';
 
 	const lang = getLangContext();

@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
+	import { getPokemon } from '#lib/pokemons/index.js';
 	import type { Snippet } from 'svelte';
 
 	type Props = { id: number; health: Snippet<[number, number]> };

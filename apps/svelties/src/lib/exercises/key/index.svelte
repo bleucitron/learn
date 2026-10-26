@@ -1,6 +1,6 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
-	import { getRandomNumber } from '$lib/utils/getRandomNumber';
+	import { getPokemon } from '#lib/pokemons/index.js';
+	import { getRandomNumber } from '#lib/utils/getRandomNumber.js';
 	import { blur } from 'svelte/transition';
 
 	let id = $state<number>(25);

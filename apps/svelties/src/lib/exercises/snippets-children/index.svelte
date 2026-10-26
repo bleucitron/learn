@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
+	import { getPokemon } from '#lib/pokemons/index.js';
 	import Card from './Card.svelte';
 
 	const { name, id, types: _types } = getPokemon(25);

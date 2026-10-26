@@ -1,5 +1,5 @@
 <script lang="ts">
-	import favicon from '$lib/assets/pika.webp';
+	import favicon from '#lib/assets/pika.webp';
 
 	let { children } = $props();
 </script>

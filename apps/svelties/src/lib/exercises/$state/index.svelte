@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
+	import { getPokemon } from '#lib/pokemons/index.js';
 
 	const pokemon = getPokemon(25);
 

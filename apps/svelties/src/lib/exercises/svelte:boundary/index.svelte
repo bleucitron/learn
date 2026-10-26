@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
+	import { getPokemon } from '#lib/pokemons/index.js';
 	import BrokenButton from './BrokenButton.svelte';
 	import Pokemon from './Pokemon.svelte';
 

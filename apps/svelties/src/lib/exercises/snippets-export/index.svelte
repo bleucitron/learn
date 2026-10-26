@@ -1,5 +1,5 @@
 <script lang="ts">
-	import { getPokemon } from '$lib/pokemons';
+	import { getPokemon } from '#lib/pokemons/index.js';
 	import Card from './Card.svelte';
 
 	const ids = $state<number[]>([25, 44, 75, 2, 150]);
