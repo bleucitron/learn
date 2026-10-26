@@ -29,6 +29,7 @@
 		"svelte-check": "catalog:",
 		"typescript": "catalog:",
 		"typescript-eslint": "catalog:",
+		"typescript-svelte-plugin": "catalog:",
 		"vite": "catalog:"
 	},
 	"imports": {

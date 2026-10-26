@@ -28,6 +28,7 @@
     "prettier-plugin-svelte": "catalog:",
     "typescript": "catalog:",
     "typescript-eslint": "catalog:",
+    "typescript-svelte-plugin": "catalog:",
     "vite": "catalog:"
   }
 }
