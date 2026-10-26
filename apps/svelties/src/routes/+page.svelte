@@ -1,5 +1,14 @@
 <script lang="ts">
-	import Exo from '#lib/exercises/tags/key/index.svelte';
 </script>
 
-<Exo />
+<div>
+	<h1>Svelties</h1>
+</div>
+
+<style>
+	div {
+		display: grid;
+		place-content: center;
+		height: 100%;
+	}
+</style>

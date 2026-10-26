@@ -8,16 +8,4 @@
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
-<div class="exercise">
-	{@render children()}
-</div>
-
-<style>
-	.exercise {
-		display: flex;
-		flex-flow: column;
-		align-items: center;
-		place-content: center;
-		height: 100%;
-	}
-</style>
+{@render children()}
