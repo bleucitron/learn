@@ -25,6 +25,8 @@
 		display: flex;
 		gap: 0.5rem;
 		margin: 0.5rem;
+
+		z-index: 1;
 	}
 
 	h1 {
@@ -34,6 +36,10 @@
 	header,
 	h1 {
 		font-size: 0.8rem;
+	}
+
+	nav {
+		margin-inline: 1rem;
 	}
 
 	.exercise {
