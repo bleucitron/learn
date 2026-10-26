@@ -2,13 +2,14 @@
 
 ## Tags
 
-- [ ] {#key}
+- [x] {#key}
 
 ## Syntaxe Svelte 5
 
 - [x] events – basic
 - [x] classes – basic
 - [x] $state – basic
+- [ ] reactivity – runtime reactivity
 - [ ] $state - deep reactivity
 - [ ] $state - fine-grained reactivity
 - [x] $derived – basic
