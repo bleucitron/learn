@@ -35,5 +35,11 @@
 	"imports": {
 		"#lib": "./src/lib/index.js",
 		"#lib/*": "./src/lib/*"
+	},
+	"dependencies": {
+		"@mdit-vue/plugin-frontmatter": "catalog:",
+		"@mdit-vue/types": "catalog:",
+		"@types/markdown-it": "catalog:",
+		"markdown-it": "catalog:"
 	}
 }

@@ -30,5 +30,11 @@
     "typescript-eslint": "catalog:",
     "typescript-svelte-plugin": "catalog:",
     "vite": "catalog:"
+  },
+  "dependencies": {
+    "@mdit-vue/plugin-frontmatter": "catalog:",
+    "@mdit-vue/types": "catalog:",
+    "@types/markdown-it": "catalog:",
+    "markdown-it": "catalog:"
   }
 }

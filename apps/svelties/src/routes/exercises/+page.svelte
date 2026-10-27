@@ -1,12 +1,13 @@
 <script lang="ts">
 	const { data } = $props();
 
-	const { paths } = $derived(data);
+	const { exercises } = $derived(data);
+	$inspect(exercises);
 </script>
 
 <nav>
 	<ul>
-		{#each paths as path (path)}
+		{#each exercises as { path } (path)}
 			<a href="/exercises/{path}">{path}</a>
 		{/each}
 	</ul>
