@@ -3,7 +3,7 @@
 	import Card from './Card.svelte';
 
 	const { name, id, types: _types } = getPokemon(25);
-	const types = $derived(_types.map((t) => t.type.name));
+	const types = _types.map((t) => t.type.name);
 </script>
 
 <!-- TODO: provide the Card with a default snippet of your choice -->
