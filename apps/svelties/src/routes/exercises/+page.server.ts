@@ -28,7 +28,8 @@ async function readExercise(parentPath: string, path: string) {
 
 			const html = md.render(s, env);
 			const tags = env.frontmatter?.tags;
+			const needs = (env.frontmatter?.needs as string[]).map((need) => need.replace('\\', ''));
 
-			return { html, tags, path };
+			return { path, tags, needs, html };
 		});
 }
