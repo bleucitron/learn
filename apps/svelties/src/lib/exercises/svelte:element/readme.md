@@ -1,3 +1,20 @@
+---
+docs: https://svelte.dev/docs/svelte/svelte-element
+tags:
+  - syntax
+  - svelte5
+  - intermediate
+  - special-elements
+needs:
+  - $props
+  - $derived
+  - \#each-block
+  - component
+  - events
+  - attributes
+  - text-expressions
+---
+
 On veut que notre `Button` puisse aussi afficher des liens lorsque c'est pertinent
 
 - utiliser un `Button` à la place du `p` pour afficher le nom du Pokémon

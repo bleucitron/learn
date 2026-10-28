@@ -1,3 +1,20 @@
+---
+docs: https://svelte.dev/docs/svelte/snippet#Exporting-snippets
+tags:
+  - snippets
+  - syntax
+  - svelte5
+  - intermediate
+needs:
+  - $props
+  - $derived
+  - $snippet-local-component
+  - \#each-block
+  - component
+  - attributes
+  - text-expressions
+---
+
 Il est possible d'exporter un ou plusieurs snippets d'un composant pour le réutiliser ailleurs, sans
 avoir besoin de créer un composant supplémentaire
 

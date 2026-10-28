@@ -1,3 +1,19 @@
+---
+docs: https://svelte.dev/docs/svelte/declaration-tags
+tags:
+  - syntax
+  - reactivity
+  - svelte5
+  - intermediate
+  - declaration-tags
+needs:
+  - \#each-block
+  - \#each-block-key
+  - attributes
+  - text-expressions
+  - events
+---
+
 Comme on peut utiliser `{let ...}` pour définir un `$state` dans le markup, on peut aussi utiliser
 `{const ...}` pour définir un `$derived`.
 

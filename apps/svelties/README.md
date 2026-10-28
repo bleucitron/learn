@@ -1,18 +1,30 @@
 # Plan
 
-## Tags
+## Markup
 
+- [ ] text-expressions
+- [ ] attributes
 - [x] {#key}
+- [ ] {#if}
+- [ ] {#each}
+- [ ] {#await}
+- [ ] {#await} - {:then}
+- [ ] {#await} - {:catch}
+
+- [ ] components
 
 ## Syntaxe Svelte 5
 
 - [x] events – basic
 - [x] classes – basic
+- [ ] $props - basic
 - [x] $state – basic
 - [ ] reactivity – runtime reactivity
 - [ ] $state - deep reactivity
 - [ ] $state - fine-grained reactivity
 - [x] $derived – basic
+- [ ] $derived.by
+- [ ] $derived – let
 - [x] $effect – basic
 - [ ] $effect – untrack
 - [ ] $derived – untrack
@@ -55,6 +67,8 @@
 
 - [ ] SvelteDate
 - [ ] SvelteSet
+- [ ] SvelteMap
+- [ ] SvelteURL
 
 ## $state avancé
 

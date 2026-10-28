@@ -1,3 +1,20 @@
+---
+docs: https://svelte.dev/docs/svelte/svelte-window
+tags:
+  - syntax
+  - svelte5
+  - intermediate
+  - special-elements
+needs:
+  - $props
+  - $derived
+  - \#each-block
+  - component
+  - attributes
+  - text-expressions
+  - style-directive
+---
+
 `<svelte:window>` permet de facilement accéder aux propriétés de la `window`.
 
 Actuellement, les Pokémons sauvages sont tous positionnés au même endroit, car ils n'ont pas

@@ -1,3 +1,17 @@
+---
+docs: https://svelte.dev/docs/svelte/snippet
+tags:
+  - snippets
+  - syntax
+  - svelte5
+  - intermediate
+needs:
+  - $state
+  - $derived
+  - \#each-block
+  - attributes
+---
+
 Les snippets sont des composants "locaux", permettant de factoriser du markup.
 
 - créer un snippet `team` permettant de remplacer les 2 occurrences de `{#each}`
