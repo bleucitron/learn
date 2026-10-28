@@ -10,7 +10,7 @@ needs:
   - $state
   - deep-reactivity
   - classes
-  - \#each-block
+  - \{#each}
   - $derived
   - events
   - attributes

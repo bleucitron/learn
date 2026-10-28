@@ -8,7 +8,7 @@ tags:
 needs:
   - $state
   - $derived
-  - \#each-block
+  - \{#each}
   - attributes
 ---
 

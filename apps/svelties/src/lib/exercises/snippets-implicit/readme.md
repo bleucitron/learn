@@ -7,9 +7,9 @@ tags:
   - intermediate
 needs:
   - $props
-  - $snippet-local-component
+  - \{#snippet}
   - component
-  - \#each-block
+  - \{#each}
   - attributes
   - events
   - text-expressions

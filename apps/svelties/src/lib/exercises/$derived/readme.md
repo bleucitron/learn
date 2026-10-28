@@ -7,7 +7,7 @@ tags:
   - svelte5
   - beginner
 needs:
-  - \#each-block
+  - \{#each}
   - events
   - attributes
   - text-expressions

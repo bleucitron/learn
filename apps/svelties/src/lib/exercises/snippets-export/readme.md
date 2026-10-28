@@ -8,8 +8,8 @@ tags:
 needs:
   - $props
   - $derived
-  - $snippet-local-component
-  - \#each-block
+  - \{#snippet}
+  - \{#each}
   - component
   - attributes
   - text-expressions

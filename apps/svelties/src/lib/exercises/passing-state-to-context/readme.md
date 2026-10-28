@@ -10,7 +10,7 @@ needs:
   - $derived
   - $props
   - component
-  - \#each-block
+  - \{#each}
   - classes
   - events
   - attributes

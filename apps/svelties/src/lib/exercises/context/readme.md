@@ -9,7 +9,7 @@ needs:
   - $derived
   - $props
   - component
-  - \#each-block
+  - \{#each}
   - attributes
 ---
 
