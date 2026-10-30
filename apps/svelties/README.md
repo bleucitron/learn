@@ -24,7 +24,7 @@
 - [-] $state – deep reactivity
 - [ ] $state – fine-grained reactivity
 - [x] $derived – basic
-- [-] $derived.by
+- [x] $derived.by
 - [-] $derived – let
 - [x] $effect – basic
 - [ ] $effect – untrack
