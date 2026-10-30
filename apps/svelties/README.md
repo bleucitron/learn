@@ -8,8 +8,8 @@
 - [ ] {#if}
 - [ ] {#each}
 - [ ] {#await}
-- [ ] {#await} - {:then}
-- [ ] {#await} - {:catch}
+- [ ] {#await} – {:then}
+- [ ] {#await} – {:catch}
 
 - [ ] components
 
@@ -17,14 +17,14 @@
 
 - [x] events – basic
 - [x] classes – basic
-- [ ] $props - basic
+- [x] $props – basic
 - [x] $state – basic
-- [ ] reactivity – runtime reactivity
-- [ ] $state - deep reactivity
-- [ ] $state - fine-grained reactivity
+- [-] reactivity – runtime reactivity
+- [-] $state – deep reactivity
+- [ ] $state – fine-grained reactivity
 - [x] $derived – basic
-- [ ] $derived.by
-- [ ] $derived – let
+- [-] $derived.by
+- [-] $derived – let
 - [x] $effect – basic
 - [ ] $effect – untrack
 - [ ] $derived – untrack

@@ -44,10 +44,14 @@
 
 	.exercise {
 		position: relative;
-		display: flex;
+		/* display: flex; */
 		flex-flow: column;
 		align-items: center;
 		place-content: center;
 		height: 100%;
+
+		:global(p) {
+			margin: 0;
+		}
 	}
 </style>
