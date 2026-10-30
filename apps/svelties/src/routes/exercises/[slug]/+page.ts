@@ -1,9 +1,15 @@
+import { error } from '@sveltejs/kit';
+
 export async function load({ params }) {
 	const { slug } = params;
 
-	const Component = (await import(`#lib/exercises/${slug}/index.svelte`)).default;
+	try {
+		const Component = (await import(`#lib/exercises/${slug}/index.svelte`)).default;
 
-	return {
-		Component
-	};
+		return {
+			Component
+		};
+	} catch {
+		error(404);
+	}
 }
