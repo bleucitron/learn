@@ -1,12 +1,10 @@
 <script lang="ts">
 	import { getPokemon } from '#lib/pokemons/index.js';
 
-	// TODO: make this component able to receive props
-	const id = 25;
-	const { name, sprites } = getPokemon(id);
+	type Props = { id: number; maxHealth: number; health: number };
 
-	const health = 50;
-	const maxHealth = 100;
+	const { id, health, maxHealth }: Props = $props();
+	const { name, sprites } = $derived(getPokemon(id));
 </script>
 
 <div class="Pokemon">
@@ -21,6 +19,5 @@
 		flex-flow: column;
 		align-items: center;
 		gap: 0.5rem;
-		flex: 1 0;
 	}
 </style>

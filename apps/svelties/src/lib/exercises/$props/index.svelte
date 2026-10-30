@@ -2,9 +2,9 @@
 	import Pokemon from './Pokemon.svelte';
 </script>
 
-<!-- TODO: instantiate different individuals with differents props -->
 <div>
-	<Pokemon />
+	<Pokemon id={25} health={50} maxHealth={100} />
+	<Pokemon id={80} health={12} maxHealth={250} />
 </div>
 
 <style lang="scss">
