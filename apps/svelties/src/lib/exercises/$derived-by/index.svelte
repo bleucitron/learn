@@ -8,8 +8,13 @@
 
 	let hp = $state(0);
 
-	// TODO: use $derived.by to add two more statuses, 'ok' and 'weak'
-	const status = $derived(hp >= 50 ? 'great' : 'dying');
+	const status = $derived.by(() => {
+		if (hp >= 80) return 'great';
+		if (hp >= 50) return 'ok';
+		if (hp >= 20) return 'weak';
+
+		return 'dying';
+	});
 
 	function heal() {
 		hp = Math.min(hp + 10, MAX_HP);
