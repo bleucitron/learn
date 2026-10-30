@@ -18,6 +18,7 @@
 - [x] events – basic
 - [x] classes – basic
 - [x] $props – basic
+- [x] $props – let
 - [x] $state – basic
 - [-] reactivity – runtime reactivity
 - [-] $state – deep reactivity
