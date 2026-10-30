@@ -5,11 +5,10 @@
 
 	const MAX_HP = 50;
 
-	const { id, hp = MAX_HP }: Props = $props();
+	let { id, hp = MAX_HP }: Props = $props();
 	const { name, sprites } = $derived(getPokemon(id));
 
 	function heal() {
-		// TODO: Our Pokemon won't heal... fix it
 		hp = Math.min(hp + 10, MAX_HP);
 	}
 </script>
