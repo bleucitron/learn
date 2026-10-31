@@ -44,7 +44,7 @@
 
 	.exercise {
 		position: relative;
-		display: flex;
+		display: grid;
 		flex-flow: column;
 		align-items: center;
 		place-content: center;
