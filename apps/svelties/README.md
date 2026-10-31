@@ -21,7 +21,7 @@
 - [x] $props – let
 - [x] $state – basic
 - [-] reactivity – runtime reactivity
-- [-] $state – deep reactivity
+- [x] $state – deep reactivity
 - [ ] $state – fine-grained reactivity
 - [x] $derived – basic
 - [x] $derived.by
