@@ -2,6 +2,7 @@
 
 ## Markup
 
+- [ ] .svelte
 - [ ] text-expressions
 - [ ] attributes
 - [x] {#key}
@@ -22,14 +23,14 @@
 - [x] $state – basic
 - [x] reactivity – runtime reactivity
 - [x] $state – deep reactivity
-- [ ] $state – fine-grained reactivity
+- [-] $state – fine-grained reactivity
 - [x] $derived – basic
 - [x] $derived.by
 - [-] $derived – let
 - [x] $effect – basic
-- [ ] $effect – untrack
-- [ ] $derived – untrack
-- [ ] $derived vs $effect
+- [-] $derived vs $effect
+- [-] $effect – untrack
+- [-] $derived – untrack
 - [x] $inspect – basic
 - [x] {const}
 - [x] {let}
@@ -84,7 +85,8 @@
 
 ## bindings
 
-- [ ] component bindings
+- [ ] bind:
+- [-] $bindable
 
 ## special elements
 
