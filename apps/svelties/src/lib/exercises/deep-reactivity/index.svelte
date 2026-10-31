@@ -13,8 +13,7 @@
 	function add() {
 		const id = getRandomNumber(151);
 
-		// TODO: this reassignation is not necessary to trigger reactivity. do without.
-		ids = [...ids, id];
+		ids.push(id);
 	}
 </script>
 
