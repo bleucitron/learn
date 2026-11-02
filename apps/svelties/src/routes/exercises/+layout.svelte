@@ -1,57 +1,44 @@
 <script lang="ts">
+	import { resolve } from '$app/paths';
 	import { page } from '$app/state';
 
 	let { children } = $props();
 </script>
 
-<div class="exercise">
-	<header>
-		<nav>
-			<a href="/exercises">exercises</a>
-			<h1>
-				{page.params.slug}
-			</h1>
-		</nav>
-	</header>
-	{@render children()}
-</div>
+<header>
+	<nav>
+		<a href={resolve('/')}>svelties</a>/<a href={resolve('/exercises')}>exercises</a>/
+		<h1>
+			{page.params.slug}
+		</h1>
+	</nav>
+</header>
+{@render children()}
 
-<style>
+<style lang="scss">
 	header {
-		position: absolute;
+		position: sticky;
 		top: 0;
-		left: 1rem;
 
 		display: flex;
 		gap: 0.5rem;
-		margin: 0.5rem;
+		padding: 0.5rem;
+
+		background: white;
 
 		z-index: 1;
 	}
 
 	h1 {
 		display: inline;
+		font-size: 1.2rem;
 	}
 
-	header,
-	h1 {
+	header {
 		font-size: 0.8rem;
 	}
 
 	nav {
 		margin-inline: 1rem;
-	}
-
-	.exercise {
-		position: relative;
-		display: grid;
-		flex-flow: column;
-		align-items: center;
-		place-content: center;
-		height: 100%;
-
-		:global(p) {
-			margin: 0;
-		}
 	}
 </style>

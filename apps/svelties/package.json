@@ -37,6 +37,8 @@
 		"#lib/*": "./src/lib/*"
 	},
 	"dependencies": {
+		"@fontsource/commit-mono": "^5.3.0",
+		"@fontsource/dm-serif-display": "^5.3.0",
 		"@mdit-vue/plugin-frontmatter": "catalog:",
 		"@mdit-vue/types": "catalog:",
 		"@types/markdown-it": "catalog:",

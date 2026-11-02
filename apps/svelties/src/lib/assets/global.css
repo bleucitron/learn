@@ -1,0 +1,90 @@
+@import '@fontsource/dm-serif-display';
+@import '@fontsource/commit-mono';
+
+@font-face {
+	font-family: 'PokemonGb';
+	src: url('/fonts/PokemonGb-RAeo.ttf');
+}
+
+:root {
+	--orange: #f96743;
+}
+
+html,
+body {
+	position: relative;
+	width: 100%;
+	height: 100%;
+}
+
+* {
+	box-sizing: border-box;
+	font-family:
+		Commit Mono,
+		Roboto,
+		sans-serif;
+}
+
+body {
+	margin: 0;
+	line-height: 1.5;
+	box-sizing: border-box;
+	font-family:
+		Commit Mono,
+		Roboto,
+		sans-serif;
+	color: black;
+}
+
+body > div {
+	width: 100%;
+}
+
+h1 {
+	margin: 0;
+	font-size: 5rem;
+	color: black;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family:
+		DM Serif Display,
+		Georgia,
+		serif;
+}
+
+a {
+	color: black;
+
+	&:visited {
+		color: var(--orange);
+	}
+
+	&:hover,
+	&:focus-visible {
+		outline: none;
+	}
+}
+
+ul {
+	all: unset;
+	list-style: none;
+}
+
+menu {
+	padding: 0;
+}
+
+label {
+	display: block;
+}
+
+#app {
+	display: flex;
+	flex-flow: column;
+}

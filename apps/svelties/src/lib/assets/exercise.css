@@ -1,0 +1,50 @@
+.exercise {
+	* {
+		font-family: 'PokemonGb', sans-serif;
+	}
+
+	h1,
+	h2,
+	p {
+		margin: 0;
+		text-align: center;
+	}
+
+	menu {
+		padding: 0;
+	}
+
+	label {
+		display: block;
+	}
+
+	button {
+		padding: 0.5rem;
+		color: #333;
+		outline: none;
+		background-color: transparent;
+		border: none;
+		border-radius: 0;
+		cursor: pointer;
+	}
+
+	button:disabled {
+		color: #999;
+	}
+	button:disabled:focus,
+	button:disabled:hover {
+		cursor: default;
+		color: #999;
+		background-color: transparent;
+	}
+
+	button:not(:disabled):active {
+		background-color: #999;
+	}
+
+	button:focus,
+	button:hover {
+		background-color: #777;
+		color: white;
+	}
+}

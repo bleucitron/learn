@@ -1,4 +1,5 @@
 <script lang="ts">
+	import '#lib/assets/global.css';
 	import favicon from '#lib/assets/pika.webp';
 
 	let { children } = $props();
@@ -9,3 +10,5 @@
 </svelte:head>
 
 {@render children()}
+
+<style lang="scss"></style>
