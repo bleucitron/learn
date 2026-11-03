@@ -2,13 +2,60 @@
 	import '#lib/assets/global.css';
 	import favicon from '#lib/assets/pika.webp';
 
+	import { resolve } from '$app/paths';
+	import { page } from '$app/state';
+
 	let { children } = $props();
+
+	const segments = $derived(page.url.pathname.split('/').filter(Boolean));
 </script>
 
 <svelte:head>
 	<link rel="icon" href={favicon} />
 </svelte:head>
 
+{#if segments.length}
+	{const current = $derived(segments.at(-1))}
+	{const crumbs = $derived(segments.slice(0, -1))}
+
+	<header>
+		<nav>
+			<a href={resolve('/')}>svelties</a>/
+			{#each crumbs as crumb (crumb)}
+				<a href="/{crumb}">{crumb}</a>/
+			{/each}
+			<h1>
+				{current}
+			</h1>
+		</nav>
+	</header>
+{/if}
 {@render children()}
 
-<style lang="scss"></style>
+<style lang="scss">
+	header {
+		position: sticky;
+		top: 0;
+
+		display: flex;
+		gap: 0.5rem;
+		padding: 0.5rem;
+
+		background: white;
+
+		z-index: 1;
+	}
+
+	h1 {
+		display: inline;
+		font-size: 1.2rem;
+	}
+
+	header {
+		font-size: 0.8rem;
+	}
+
+	nav {
+		margin-inline: 1rem;
+	}
+</style>
