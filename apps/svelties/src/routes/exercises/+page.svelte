@@ -2,7 +2,6 @@
 	const { data } = $props();
 
 	const { exercises } = $derived(data);
-	$inspect(exercises);
 </script>
 
 <nav>
