@@ -2,7 +2,6 @@
 docs: https://svelte.dev/docs/svelte/svelte-element
 tags:
   - syntax
-  - svelte5
   - intermediate
   - special-elements
 needs:

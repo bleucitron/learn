@@ -3,7 +3,6 @@ docs: https://svelte.dev/docs/svelte/key
 tags:
   - syntax
   - reactivity
-  - svelte5
   - intermediate
 needs:
   - $state
