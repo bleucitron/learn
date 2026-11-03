@@ -14,13 +14,13 @@ needs:
   - $props
   - classes
   - component
-  - \{#if}
-  - \{#each}
+  - if
+  - each
   - snippets
   - events
   - attributes
   - text-expressions
-  - \{#snippet}
+  - snippet
 ---
 
 Il y a deux menus que l'on aimerait pouvoir fermer si on clique en dehors. On pourrait créer deux

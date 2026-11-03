@@ -8,7 +8,7 @@ tags:
 needs:
   - $props
   - $derived
-  - \{#each}
+  - each
   - component
   - events
   - attributes

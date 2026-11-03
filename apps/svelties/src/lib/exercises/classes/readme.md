@@ -5,8 +5,8 @@ tags:
   - svelte5
   - beginner
 needs:
-  - \{#each}
-  - \{#each}-key
+  - each
+  - each-key
   - attributes
   - text-expressions
 ---

@@ -10,7 +10,7 @@ needs:
   - $derived
   - $props
   - component
-  - \{#each}
+  - each
   - classes
   - events
   - attributes

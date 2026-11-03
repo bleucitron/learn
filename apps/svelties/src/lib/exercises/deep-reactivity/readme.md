@@ -9,7 +9,7 @@ tags:
   - beginner
 needs:
   - $state
-  - \{#each}
+  - each
   - $derived
   - events
   - attributes

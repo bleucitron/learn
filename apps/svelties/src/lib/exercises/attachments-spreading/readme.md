@@ -14,7 +14,7 @@ needs:
   - $derived
   - $props
   - component
-  - \{#each}
+  - each
   - events
   - attributes
   - text-expressions

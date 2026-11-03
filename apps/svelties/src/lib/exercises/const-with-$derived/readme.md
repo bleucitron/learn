@@ -7,8 +7,8 @@ tags:
   - intermediate
   - declaration-tags
 needs:
-  - \{#each}
-  - \{#each}-key
+  - each
+  - each-key
   - attributes
   - text-expressions
   - events

@@ -9,7 +9,7 @@ needs:
   - $state
   - $props
   - component
-  - \{#each}
+  - each
   - classes
   - events
   - attributes

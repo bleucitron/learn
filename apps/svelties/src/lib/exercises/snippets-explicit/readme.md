@@ -8,7 +8,7 @@ tags:
 needs:
   - $props
   - $state
-  - \{#snippet}
+  - snippet
   - component
   - attributes
   - text-expressions

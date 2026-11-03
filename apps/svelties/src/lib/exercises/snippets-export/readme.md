@@ -8,8 +8,8 @@ tags:
 needs:
   - $props
   - $derived
-  - \{#snippet}
-  - \{#each}
+  - snippet
+  - each
   - component
   - attributes
   - text-expressions
