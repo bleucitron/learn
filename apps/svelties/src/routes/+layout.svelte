@@ -34,6 +34,8 @@
 
 <style lang="scss">
 	header {
+		align-self: start;
+
 		position: sticky;
 		top: 0;
 
