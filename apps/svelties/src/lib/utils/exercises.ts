@@ -19,7 +19,7 @@ export async function readExercise(parentPath: string, path: string) {
 			const env: MarkdownItEnv = {};
 
 			const html = md.render(s, env);
-			const tags = env.frontmatter?.tags;
+			const tags = env.frontmatter?.tags as string[];
 			const needs = (env.frontmatter?.needs as string[]).map((need) => need.replace('\\', ''));
 
 			return { path, tags, needs, html };

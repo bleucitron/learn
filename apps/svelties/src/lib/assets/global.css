@@ -8,6 +8,7 @@
 
 :root {
 	--orange: #f96743;
+	--svelte-font: DM Serif Display, Georgia, serif;
 }
 
 html,
@@ -52,10 +53,7 @@ h3,
 h4,
 h5,
 h6 {
-	font-family:
-		DM Serif Display,
-		Georgia,
-		serif;
+	font-family: var(--svelte-font);
 }
 
 a {

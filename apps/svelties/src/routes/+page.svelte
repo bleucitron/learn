@@ -6,7 +6,7 @@
 	<h1>Svelties</h1>
 
 	<nav>
-		<a href={resolve('/topics')}>Topics</a>
+		<a href={resolve('/tags')}>Tags</a>
 		<a href={resolve('/exercises')}>Exercises</a>
 	</nav>
 </div>
