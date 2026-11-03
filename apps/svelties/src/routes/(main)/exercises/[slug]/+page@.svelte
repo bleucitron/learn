@@ -11,6 +11,8 @@
 
 <style lang="scss">
 	.exercise {
+		flex: 1 0;
+
 		position: relative;
 		display: grid;
 		flex-flow: column;
