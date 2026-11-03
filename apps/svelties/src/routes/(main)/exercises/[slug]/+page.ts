@@ -9,7 +9,10 @@ export async function load({ params }) {
 		return {
 			Component
 		};
-	} catch {
-		error(404);
+	} catch (e: unknown) {
+		if (e instanceof Error && e.message.includes('Unknown')) {
+			error(404);
+		}
+		error(500, `Oops, something broke, you should check the code in ${slug}.svelte`);
 	}
 }
