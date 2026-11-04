@@ -12,6 +12,8 @@
 
 		display: grid;
 		place-content: center;
+
+		width: 100%;
 		padding-inline: 3rem;
 	}
 </style>

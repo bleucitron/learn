@@ -5,9 +5,12 @@
 <div>
 	<h1>Svelties</h1>
 
+	<div>
+		<a href={resolve('/(main)/course')}>Course</a>
+	</div>
 	<nav>
-		<a href={resolve('/tags')}>Tags</a>
-		<a href={resolve('/exercises')}>Exercises</a>
+		<a href={resolve('/(main)/tags')}>Tags</a>
+		<a href={resolve('/(main)/exercises')}>Exercises</a>
 	</nav>
 </div>
 
