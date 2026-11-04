@@ -6,22 +6,25 @@ import type { MarkdownItEnv } from '@mdit-vue/types';
 
 const md = new markdownit({ html: true }).use(frontmatterPlugin);
 
-export async function readExercises() {
-	const dirs = await readdir('./src/lib/exercises', { withFileTypes: true });
+const folder = './src/lib/exercises';
 
-	return Promise.all(dirs.map(({ parentPath, name }) => readExercise(parentPath, name)));
+export async function readExercises() {
+	const dirs = await readdir(folder, { withFileTypes: true });
+
+	return Promise.all(dirs.map(({ name }) => readExercise(name)));
 }
 
-export async function readExercise(parentPath: string, path: string) {
-	return readFile(join(parentPath, path, 'readme.md'))
+export async function readExercise(path: string) {
+	return readFile(join(folder, path, 'readme.md'))
 		.then((b) => b.toString())
 		.then((s) => {
 			const env: MarkdownItEnv = {};
 
 			const html = md.render(s, env);
+			const docs = env.frontmatter?.docs as string;
 			const tags = env.frontmatter?.tags as string[];
 			const needs = (env.frontmatter?.needs as string[]).map((need) => need.replace('\\', ''));
 
-			return { path, tags, needs, html };
+			return { path, tags, needs, html, docs };
 		});
 }

@@ -7,7 +7,9 @@
 
 	let { children } = $props();
 
-	const segments = $derived(page.url.pathname.split('/').filter(Boolean));
+	const { data, url } = $derived(page);
+	const docs = $derived(data?.exercise?.docs);
+	const segments = $derived(url.pathname.split('/').filter(Boolean));
 </script>
 
 <svelte:head>
@@ -28,18 +30,23 @@
 				{current}
 			</h1>
 		</nav>
+		{#if docs}
+			<nav>
+				<a href={docs} target="_blank">docs</a>
+			</nav>
+		{/if}
 	</header>
 {/if}
 {@render children()}
 
 <style lang="scss">
 	header {
-		align-self: start;
-
 		position: sticky;
 		top: 0;
 
 		display: flex;
+		justify-content: space-between;
+		align-items: baseline;
 		gap: 0.5rem;
 		padding: 0.5rem;
 
