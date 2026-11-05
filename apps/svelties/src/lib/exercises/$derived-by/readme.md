@@ -1,5 +1,5 @@
 ---
-docs: https://svelte.dev/docs/svelte/$props
+docs: https://svelte.dev/docs/svelte/$derived#$derived.by
 tags:
   - syntax
   - $derived

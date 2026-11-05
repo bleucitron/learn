@@ -1,5 +1,5 @@
 ---
-docs: https://svelte.dev/docs/svelte/@attach
+docs: https://svelte.dev/docs/svelte/basic-markup#Events
 tags:
   - syntax
   - reactivity

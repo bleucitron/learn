@@ -1,5 +1,5 @@
 ---
-docs: https://svelte.dev/docs/svelte/declaration-tags
+docs: https://svelte.dev/docs/svelte/class
 tags:
   - syntax
   - svelte5

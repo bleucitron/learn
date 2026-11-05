@@ -38,6 +38,12 @@
 
 - [ ] Projet : Filtrer le Pokédex par nom et par type
 
+## Transitions & animations
+
+- [ ] transition
+- [ ] transition params
+- [ ] in & out
+
 ## Contexte
 
 - [x] context – basic

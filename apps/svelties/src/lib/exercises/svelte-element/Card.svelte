@@ -1,5 +1,6 @@
 <script lang="ts">
 	import { getPokemon } from '#lib/pokemons/index.js';
+	import Button from './Button.svelte';
 
 	type Props = {
 		id: number;
@@ -14,7 +15,7 @@
 	<div class="id">
 		<p>#{id}</p>
 		<!-- TODO: use a <Button> with an href to https://en.wikipedia.org/wiki/{id} -->
-		<p>{name}</p>
+		<Button href="https://en.wikipedia.org/wiki/{name}" label={name} />
 	</div>
 
 	<img src={sprites.front_default} alt={name} />
