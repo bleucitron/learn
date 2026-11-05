@@ -6,8 +6,8 @@
 
 <nav>
 	<ul>
-		{#each exercises as { path } (path)}
-			<a href="/exercises/{path}">{path}</a>
+		{#each exercises as { path, name } (path)}
+			<a href="/exercises/{path}">{name ?? path}</a>
 		{/each}
 	</ul>
 </nav>

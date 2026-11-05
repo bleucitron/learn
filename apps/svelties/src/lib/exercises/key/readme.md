@@ -1,4 +1,5 @@
 ---
+name: \{key ...\}
 docs: https://svelte.dev/docs/svelte/key
 tags:
   - syntax

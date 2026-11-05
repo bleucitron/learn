@@ -1,4 +1,5 @@
 ---
+name: $derived.by
 docs: https://svelte.dev/docs/svelte/$derived#$derived.by
 tags:
   - syntax

@@ -1,4 +1,5 @@
 ---
+name: \{@attach ...\}
 docs: https://svelte.dev/docs/svelte/@attach
 tags:
   - syntax

@@ -1,4 +1,5 @@
 ---
+name: \{const ...\}
 docs: https://svelte.dev/docs/svelte/declaration-tags
 tags:
   - syntax
