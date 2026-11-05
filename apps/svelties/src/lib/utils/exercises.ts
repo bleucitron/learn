@@ -25,7 +25,7 @@ export async function readExercise(path: string) {
 
 			if (!env.frontmatter) return { html };
 
-			const name = cleanName((env.frontmatter.name ?? '') as string);
+			const name = cleanName(env.frontmatter.name as string | undefined);
 			const docs = env.frontmatter.docs as string;
 			const tags = (env.frontmatter.tags ?? []) as string[];
 			const needs = ((env.frontmatter.needs ?? []) as string[]).map(cleanName);
@@ -34,6 +34,6 @@ export async function readExercise(path: string) {
 		});
 }
 
-function cleanName(name: string) {
-	return name.replaceAll('\\', '');
+function cleanName(name?: string) {
+	return name?.replaceAll('\\', '');
 }
