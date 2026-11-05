@@ -1,4 +1,5 @@
 ---
+name: <svelte:window>
 docs: https://svelte.dev/docs/svelte/svelte-window
 tags:
   - syntax

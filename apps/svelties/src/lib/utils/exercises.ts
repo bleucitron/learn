@@ -1,8 +1,9 @@
+import type { MarkdownItEnv } from '@mdit-vue/types';
+
 import { join } from 'node:path';
 import { readdir, readFile } from 'node:fs/promises';
 import markdownit from 'markdown-it';
 import { frontmatterPlugin } from '@mdit-vue/plugin-frontmatter';
-import type { MarkdownItEnv } from '@mdit-vue/types';
 
 const md = new markdownit({ html: true }).use(frontmatterPlugin);
 
@@ -21,10 +22,14 @@ export async function readExercise(path: string) {
 			const env: MarkdownItEnv = {};
 
 			const html = md.render(s, env);
-			const docs = env.frontmatter?.docs as string;
+
+			if (!env.frontmatter) return { html };
+
+			const name = env.frontmatter?.name;
+			const docs = env.frontmatter?.docs;
 			const tags = env.frontmatter?.tags as string[];
 			const needs = (env.frontmatter?.needs as string[]).map((need) => need.replace('\\', ''));
 
-			return { path, tags, needs, html, docs };
+			return { name, path, tags, needs, html, docs };
 		});
 }

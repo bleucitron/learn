@@ -8,7 +8,7 @@
 	let { children } = $props();
 
 	const { data, url } = $derived(page);
-	const docs = $derived(data?.exercise?.docs);
+	const { exercise } = $derived(data);
 	const segments = $derived(url.pathname.split('/').filter(Boolean));
 </script>
 
@@ -20,6 +20,8 @@
 	{const current = $derived(segments.at(-1))}
 	{const crumbs = $derived(segments.slice(0, -1))}
 
+	{const name = $derived(exercise?.name ?? current)}
+	{const docs = $derived(exercise?.docs)}
 	<header>
 		<nav>
 			<a href={resolve('/')}>svelties</a>/
@@ -27,7 +29,7 @@
 				<a href="/{crumb}">{crumb}</a>/
 			{/each}
 			<h1>
-				{current}
+				{name}
 			</h1>
 		</nav>
 		{#if docs}

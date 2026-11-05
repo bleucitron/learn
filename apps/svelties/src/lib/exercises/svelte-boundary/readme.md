@@ -1,4 +1,5 @@
 ---
+name: <svelte:boundary>
 docs: https://svelte.dev/docs/svelte/svelte-boundary
 tags:
   - syntax

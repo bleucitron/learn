@@ -1,4 +1,5 @@
 ---
+name: <svelte:element>
 docs: https://svelte.dev/docs/svelte/svelte-element
 tags:
   - syntax
