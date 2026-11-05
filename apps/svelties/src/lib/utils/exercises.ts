@@ -19,19 +19,21 @@ export async function readExercise(path: string) {
 	return readFile(join(folder, path, 'readme.md'))
 		.then((b) => b.toString())
 		.then((s) => {
-			// console.log('PATH', path);
 			const env: MarkdownItEnv = {};
 
 			const html = md.render(s, env);
 
 			if (!env.frontmatter) return { html };
-			// console.log('meta', env.frontmatter);
 
-			const name = (env.frontmatter.name as string)?.replaceAll('\\', '');
+			const name = cleanName((env.frontmatter.name ?? '') as string);
 			const docs = env.frontmatter.docs as string;
-			const tags = env.frontmatter.tags as string[];
-			const needs = (env.frontmatter.needs as string[]).map((need) => need.replaceAll('\\', ''));
+			const tags = (env.frontmatter.tags ?? []) as string[];
+			const needs = ((env.frontmatter.needs ?? []) as string[]).map(cleanName);
 
-			return { name, path, tags, needs, html, docs };
+			return { slug: path, name, tags, needs, html, docs };
 		});
+}
+
+function cleanName(name: string) {
+	return name.replaceAll('\\', '');
 }
