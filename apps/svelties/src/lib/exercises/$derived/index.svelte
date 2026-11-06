@@ -6,10 +6,9 @@
 
 	let ids = $state<number[]>([25]);
 
-	// TODO: use $derived to make this app work
-	const pokemons = ids.map(getPokemon);
-	const teamSize = ids.length;
-	const full = teamSize === MAX;
+	const pokemons = $derived(ids.map(getPokemon));
+	const teamSize = $derived(ids.length);
+	const full = $derived(teamSize === MAX);
 
 	function findPokemon() {
 		const id = getRandomNumber(151);

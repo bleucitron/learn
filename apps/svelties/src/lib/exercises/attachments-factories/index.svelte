@@ -1,4 +1,5 @@
 <script lang="ts">
+	import { outsideClick } from './outsideClick';
 	import Pokedex from './Pokedex.svelte';
 	import Team from './Team.svelte';
 
@@ -20,8 +21,7 @@
 </script>
 
 <div>
-	<!-- TODO: create an attachment factory to be able to react to a click outside this menu -->
-	<menu>
+	<menu {@attach outsideClick(() => (navOpen = false))}>
 		<button onclick={toggleNav}>Menu</button>
 
 		{#if navOpen}

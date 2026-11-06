@@ -1,9 +1,10 @@
 <script lang="ts">
+	import type { Snippet } from 'svelte';
 	import { getPokemon } from '#lib/pokemons/index.js';
 
-	type Props = { id: number };
+	type Props = { id: number; health: Snippet<[number, number]> };
 
-	const { id }: Props = $props();
+	const { id, health }: Props = $props();
 	const { name, sprites } = $derived(getPokemon(id));
 
 	const MAX_HP = 50;
@@ -16,7 +17,7 @@
 
 <div class="Pokemon">
 	<img src={sprites.front_default} alt={name} />
-	<p>{hp}/{MAX_HP}</p>
+	{@render health(hp, MAX_HP)}
 	<button onclick={heal}>Heal</button>
 </div>
 

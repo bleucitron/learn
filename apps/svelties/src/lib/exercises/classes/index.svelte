@@ -8,8 +8,7 @@
 
 <div class="pokedex">
 	{#each pokemons as { id, name, sprites } (id)}
-		<!-- TODO: use `found` array to add a class to found Pokemons -->
-		<img src={sprites.front_default} alt={name} />
+		<img src={sprites.front_default} alt={name} class={{ found: found.includes(id) }} />
 	{/each}
 </div>
 

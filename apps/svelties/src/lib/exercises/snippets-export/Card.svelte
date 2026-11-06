@@ -1,3 +1,7 @@
+<script module>
+	export { img };
+</script>
+
 <script lang="ts">
 	import { getPokemon } from '#lib/pokemons/index.js';
 
@@ -10,13 +14,17 @@
 	const types = $derived(_types.map((t) => t.type.name));
 </script>
 
+{#snippet img(src: string, name: string)}
+	<img {src} alt={name} />
+{/snippet}
+
 <div class="Card">
 	<div class="id">
 		<p>#{id}</p>
 		<p>{name}</p>
 	</div>
 
-	<img src={sprites.front_default} alt={name} />
+	{@render img(sprites.front_default, name)}
 
 	<ul class="types">
 		{#each types as type (type)}

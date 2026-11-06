@@ -7,12 +7,16 @@
 <div class="lab">
 	<ul>
 		{#each team as id (id)}
-			<!-- TODO: use {let ...} to define a local state representing the current Pokemon exp -->
-			{const { sprites, name } = getPokemon(id)}
+			{let exp = $state(0)}
 			<li>
-				<button>
-					<img src={sprites.front_default} alt={name} />
-					<p>{name}</p>
+				<button
+					onclick={() => {
+						exp++;
+					}}
+				>
+					<img src={getPokemon(id).sprites.front_default} alt={getPokemon(id).name} />
+					<p>{getPokemon(id).name}</p>
+					<p>{exp} xp</p>
 				</button>
 			</li>
 		{/each}
