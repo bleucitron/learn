@@ -28,6 +28,8 @@
 - [x] $derived.by
 - [-] $derived – let
 - [x] $effect – basic
+- [-] $effect – clean on destroy
+- [-] $effect – clean before rerun
 - [-] $derived vs $effect
 - [-] $effect – untrack
 - [-] $derived – untrack
@@ -35,6 +37,7 @@
 - [x] {const}
 - [x] {let}
 - [x] {const} + $derived
+- [ ] css variables
 
 - [ ] Projet : Filtrer le Pokédex par nom et par type
 

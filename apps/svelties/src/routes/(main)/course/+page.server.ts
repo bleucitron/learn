@@ -39,16 +39,16 @@ export async function load() {
 			section: 'Reusing markup',
 			paths: [
 				'snippet',
-				'snippet-export',
-				'snippet-explicit',
-				'snippet-implicit',
-				'snippet-children'
+				'snippets-export',
+				'snippets-explicit',
+				'snippets-implicit',
+				'snippets-children'
 			]
 		},
 		// NOTE: projet slideshow
 		{
 			section: 'DOM interactions',
-			paths: ['@attach', 'attachments-factories', 'attachments-spreading']
+			paths: ['attach', 'attachments-factories', 'attachments-spreading']
 		}
 		// NOTE: projet scrollytelling
 	];
